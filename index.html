@@ -1,0 +1,347 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> P Sri Harsha Teja | Developer Portfolio </title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0b1120;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #111c33;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero h3 {
+            color: #94a3b8;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #cbd5e1;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 25px;
+            background: #0284c7;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+
+        .btn:hover {
+            background: #0369a1;
+        }
+
+        /* Common Sections */
+        section {
+            padding: 70px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            color: #38bdf8;
+            margin-bottom: 35px;
+        }
+
+        .about {
+            text-align: center;
+            max-width: 800px;
+            margin: auto;
+            color: #cbd5e1;
+        }
+
+        /* Skills */
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skill {
+            background: #1e293b;
+            padding: 15px 25px;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        /* Projects */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            border-color: #38bdf8;
+        }
+
+        .project-card h3 {
+            color: #38bdf8;
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: #cbd5e1;
+        }
+
+        /* Education */
+        .education {
+            text-align: center;
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* Contact */
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            margin: 12px;
+            color: #cbd5e1;
+        }
+
+        .contact a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #111c33;
+            color: #94a3b8;
+        }
+
+        @media(max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 14px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            section {
+                padding: 50px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <h2>P Sri Harsha Teja</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <h3>Hello, Welcome to My Portfolio</h3>
+
+        <h1>I'm <span>P Sri Harsha Teja</span></h1>
+
+        <h3>CSE Student | Python Developer | AI/ML Enthusiast</h3>
+
+        <p>
+            I am a Computer Science Engineering student passionate
+            about programming, artificial intelligence, machine learning
+            and developing real-world applications.
+        </p>
+
+        <a href="#projects" class="btn">Explore My Projects</a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2 class="section-title">About Me</h2>
+
+        <div class="about">
+            <p>
+                I am a third-year Computer Science and Engineering student.
+                I enjoy learning new technologies and solving programming
+                problems. My interests include Python development,
+                Artificial Intelligence, Machine Learning and Web Development.
+                I am continuously improving my technical and problem-solving
+                skills to become a professional software developer.
+            </p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2 class="section-title">My Skills</h2>
+
+        <div class="skills-container">
+            <div class="skill">Python</div>
+            <div class="skill">Java</div>
+            <div class="skill">C Programming</div>
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">SQL</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">Git & GitHub</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2 class="section-title">My Projects</h2>
+
+        <div class="projects-container">
+
+            <div class="project-card">
+                <h3>AI Resume Screening System</h3>
+                <p>
+                    An AI-based system that analyzes resumes,
+                    identifies relevant skills and helps shortlist
+                    candidates based on job requirements.
+                </p>
+            </div>
+
+            <div class="project-card">
+                <h3>Road Analysis Using YOLO</h3>
+                <p>
+                    A computer vision project using OpenCV and YOLO
+                    to detect road objects and analyze driving videos.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2 class="section-title">Education</h2>
+
+        <div class="education">
+            <h3>B.Tech - Computer Science and Engineering</h3>
+            <p>Kakatiya Institute of Technology and Science, Warangal</p>
+            <p>Currently Studying - 3rd Year</p>
+            <p>CGPA: 8.0</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2 class="section-title">Contact Me</h2>
+
+        <div class="contact">
+            <p>Email: <a href="mailto:pabbasriharshateja@gmail.com">
+                My mail</a></p>
+
+            <p>GitHub:
+                <a href="https://github.com/pabbasriharshateja" target="_blank">
+                    My GitHub
+                </a>
+            </p>
+
+            <p>LinkedIn:
+                <a href="https://www.linkedin.com/in/sri-harsha-teja-pabba-09b44324" target="_blank">
+                    My LinkedIn
+                </a>
+            </p>
+
+            <a href="mailto:yourmail@gmail.com" class="btn">
+                Hire Me
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Harsha Teja | Personal Portfolio</p>
+        <p>Designed with HTML and CSS</p>
+    </footer>
+
+</body>
+</html>
